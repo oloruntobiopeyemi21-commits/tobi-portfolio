@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tobi. — Builder</title>
+<meta name="description" content="Projects and builds by Tobi.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+  :root{
+    --bg: #F7F4EE;
+    --bg-raised: #FFFFFF;
+    --ink: #1B1A17;
+    --ink-dim: #6B6558;
+    --line: rgba(27,26,23,0.10);
+    --accent: #C1440E;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:'Inter', sans-serif; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{ font-family:'Fraunces', serif; }
+  .mono{ font-family:'Space Mono', monospace; }
+  a{ color:inherit; }
+  .wrap{ max-width:820px; margin:0 auto; padding:0 24px; }
+
+  header{ padding:72px 0 40px; }
+  .brand{
+    font-family:'Fraunces', serif; font-weight:700; font-size:22px;
+    margin-bottom:32px;
+  }
+  h1{ font-size:clamp(34px,5vw,52px); font-weight:700; line-height:1.15; margin-bottom:18px; }
+  h1 .accent{ color:var(--accent); font-style:italic; }
+  p.lead{ font-size:17px; color:var(--ink-dim); max-width:520px; line-height:1.7; }
+
+  .socials{ margin-top:28px; display:flex; gap:16px; }
+  .socials a{
+    font-family:'Space Mono'; font-size:13px; color:var(--ink);
+    border-bottom:1px solid var(--ink); padding-bottom:2px; text-decoration:none;
+  }
+
+  section{ padding:48px 0; }
+  .section-label{
+    font-family:'Space Mono'; font-size:12px; color:var(--accent);
+    text-transform:uppercase; letter-spacing:0.08em; margin-bottom:20px;
+  }
+
+  .projects{ display:flex; flex-direction:column; gap:14px; }
+  .project-card{
+    display:block; text-decoration:none; color:var(--ink);
+    background:var(--bg-raised); border:1px solid var(--line); border-radius:14px;
+    padding:26px; transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .project-card:active{ transform:scale(0.99); }
+  .project-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:10px; }
+  .project-name{ font-family:'Fraunces', serif; font-weight:700; font-size:21px; }
+  .project-tag{
+    font-family:'Space Mono'; font-size:10px; text-transform:uppercase; letter-spacing:0.05em;
+    color:var(--accent); border:1px solid rgba(193,68,14,0.3); padding:4px 9px; border-radius:999px;
+    white-space:nowrap; flex-shrink:0; margin-top:4px;
+  }
+  .project-desc{ color:var(--ink-dim); font-size:14.5px; line-height:1.6; margin-bottom:14px; }
+  .project-link{ font-family:'Space Mono'; font-size:12.5px; color:var(--ink); }
+  .project-link span{ color:var(--accent); }
+
+  footer{ border-top:1px solid var(--line); padding:36px 0 60px; }
+  footer p{ color:var(--ink-dim); font-size:13px; font-family:'Space Mono'; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Tobi.</div>
+    <h1>I build things<br>on the internet<span class="accent">.</span></h1>
+    <p class="lead">A running collection of tools, platforms, and experiments — built solo, shipped live, and iterated on in public.</p>
+    <div class="socials">
+      <a href="mailto:oloruntobiopeyemi21@gmail.com">Email</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Projects</div>
+    <div class="projects">
+
+      <a class="project-card" href="https://creator-hub-rouge.vercel.app" target="_blank" rel="noopener">
+        <div class="project-top">
+          <div class="project-name">Creator Hub</div>
+          <div class="project-tag">Live · AI Builder</div>
+        </div>
+        <div class="project-desc">An AI-powered site generator with a genuinely generous free tier — describe a site, get a working page, save and share it.</div>
+        <div class="project-link">creator-hub-rouge.vercel.app <span>&rarr;</span></div>
+      </a>
+
+      <a class="project-card" href="https://oloruntobiopeyemi21-commits.github.io/Kwaya-landing-/" target="_blank" rel="noopener">
+        <div class="project-top">
+          <div class="project-name">Kwaya</div>
+          <div class="project-tag">Early access</div>
+        </div>
+        <div class="project-desc">A marketplace vision for African creators — beats, cinematic scores, sound effects, and sample kits, without foreign fees eating the cut.</div>
+        <div class="project-link">View project <span>&rarr;</span></div>
+      </a>
+
+      <a class="project-card" href="https://free-site-builder-410014.onhercules.app/dashboard" target="_blank" rel="noopener">
+        <div class="project-top">
+          <div class="project-name">Free Site Builder</div>
+          <div class="project-tag">Live</div>
+        </div>
+        <div class="project-desc">An experiment in no-code site building.</div>
+        <div class="project-link">View project <span>&rarr;</span></div>
+      </a>
+
+      <a class="project-card" href="https://naijabusinessideas-yxicy86.public.builtwithrocket.new" target="_blank" rel="noopener">
+        <div class="project-top">
+          <div class="project-name">Naija Business Ideas</div>
+          <div class="project-tag">Live</div>
+        </div>
+        <div class="project-desc">A resource site for business ideas in Nigeria.</div>
+        <div class="project-link">View project <span>&rarr;</span></div>
+      </a>
+
+      <a class="project-card" href="https://grow-nigeria-guide.lovable.app" target="_blank" rel="noopener">
+        <div class="project-top">
+          <div class="project-name">Grow Nigeria Guide</div>
+          <div class="project-tag">Live</div>
+        </div>
+        <div class="project-desc">A guide-style resource site.</div>
+        <div class="project-link">View project <span>&rarr;</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Built by Tobi. — one project at a time.</p>
+  </div>
+</footer>
+
+</body>
+</html>
